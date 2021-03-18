@@ -1,0 +1,35 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+double derivative() {
+	double x;
+	double  n,l, k, m,result,a,b,c,d,e ;
+	cout << "now we will calculate the derivate please don t look down until you notice i calculated it already :)" << endl;
+	cout << "please enter the equqtions numbers correctly in order you should first give me power of x then m of mx then power of others you can go like this" << endl;
+	cin >> x;
+	
+	cin >> k;
+	cin >> l;
+	cin >> m;
+	cin >> a;
+	cin >> b;
+	cin >> c;
+	cin >> d;
+	cin >> e;
+	double y = pow(x, k) + (m * x) + pow(x, l)+a*(pow(x,b))+c*(pow(x,d))+e;
+	double DER;
+	cout << y << endl;
+	DER = k*(pow(x, k - 1)) + m+l*(pow(x, l - 1))+a*b*(pow(x,b-1))+c*d*(pow(x,d-1));
+	cout << DER << endl;
+	result = DER;
+	cout << "result=" << result << endl;
+
+
+	return 0;
+
+}
+int main() {
+
+	derivative();
+
+}
